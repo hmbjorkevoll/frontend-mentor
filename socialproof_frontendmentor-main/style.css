@@ -1,0 +1,188 @@
+.upperbackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.lowerbackground  {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+body {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.fullcard {
+    max-width: 1440px;
+    margin: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    /*grid-template-columns: minmax(375px, 1fr)2fr;*/
+  }
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    align-self: start;
+    color: hsl(300, 43%, 22%);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: 1vh;
+    margin-left: 2vh;
+}
+
+h3 {
+    font-size: 15px;
+    align-self: end;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 2vh;
+}
+
+.ratings1 { /*card for ratings*/
+    grid-column-start: 2;
+    max-width: 40vh;
+    align-self: start;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 1rem;
+    padding-left: 2vh;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.ratings2 { /*card for ratings*/
+    grid-column: 2;
+    max-width: 40vh;
+    justify-self: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 1rem;
+    padding-left: 2vh;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.ratings3 { /*card for ratings*/
+    grid-column: 2;
+    max-width: 40vh;
+    justify-self: end;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 1rem;
+    padding-left: 2vh;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.stars {
+    color: orange;
+    align-self: start;
+}
+
+
+.cardscontainer {
+    display: inline-grid;
+    grid-template-columns: minmax(350px, 1fr)3fr;
+    padding: 5px;
+    margin: 5px;   
+}
+
+.firsttestimonial {
+    font-family: 'Spartan', sans-serif;
+    max-width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    grid-row-start: auto;
+    align-self: start;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;  
+}
+
+.secondtestimonial {
+    font-family: 'Spartan', sans-serif;
+    max-width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    align-self: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;  
+}
+
+.thirdtestimonial {
+    font-family: 'Spartan', sans-serif;
+    max-width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    align-self: end;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;  
+}
+
+.name {
+    display: flex;
+    font-family: 'Spartan', sans-serif;
+    padding: 1vh;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.verified {
+    font-family: 'Spartan', sans-serif;
+    padding: 1vh;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%)
+}
+
+.testimonial {
+    font-family: 'Spartan', sans-serif;
+    padding: 1vh;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.attribution {
+    font-family: 'Spartan', sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
