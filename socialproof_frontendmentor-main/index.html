@@ -4,65 +4,125 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Testing CSS Grid</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="testing.css">
-        <link class="favicon"
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"/>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="contentwrapper">
-                            <h1>10,000+ of our users love our products.</h1>
-                <h3>We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</h3>
-                
-                    <div class="ratingsbox1">
-                        <ratingsbox1><p class="stars">★★★★★<span class="ratingref">  Rated 5 Stars in Reviews</span></p></ratingsbox1>
-                    </div>
-                    <div class="ratingsbox2">
-                        <ratingsbox2><p class="stars">★★★★★<span class="ratingref">  Rated 5 Stars in Report Guru</span></p></ratingsbox2>
-                    </div>
-                    <div class="ratingsbox3">    
-                        <p class="stars">★★★★★<span class="ratingref">  Rated 5 Stars in BestTech</span></p>
-                    </div>
-                    <div class="card1">
-                        <div class="person"><img class="headshot" src="/images/image-colton.jpg" alt="Picture of customer"><span class="name">Colton Smith</span></div>
-                        <div>
-                        <p class="verified">Verified Buyer</p>
-                        </div>
-                        <div class="testimonial">
-                        <p>"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p></div>
-                    </div>
-                    <div class="card2">
-                    <div class="person"><img class="headshot" src="/images/image-irene.jpg"><span class="name">Irene Roberts</span></div>
-                    <div>
-                        <p class="verified">Verified Buyer</p>
-                    </div>
-                    <div class="testimonial">
-                        <p>"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p></div>
-                    </div>
-                    <div class="card3">
-                    <div class="person"><img class="headshot" src="/images/image-anne.jpg"><span class="name">Anne Wallace</span></div>
-                    <div>
-                        <p class="verified">Verified Buyer</p>
-                    </div>
-                    <div class="testimonial">
-                        <p>"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p></div>
-                    </div>
-            
-            <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/hmbjorkevoll" target="blank">Hans Martin Bjørkevoll</a>.
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Frontend Mentor | Social proof section</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/socialproof_frontendmentor-main/style.css" />
+    <link
+      class="favicon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <main class="container">
+      <div class="upperSection">
+        <section class="headlineInfo">
+          <h1 class="headline">10,000+ of our users love our products.</h1>
+          <p class="tagline">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </section>
+        <div class="centerBlock"></div>
+        <section class="rate">
+          <div class="ratingsbox">
+            <p class="stars">★★★★★</p>
+            <p class="ratingref">Rated 5 Stars in Reviews</p>
+          </div>
+          <div class="ratingsbox">
+            <p class="stars">★★★★★</p>
+            <p class="ratingref">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div class="ratingsbox">
+            <p class="stars">★★★★★</p>
+            <p class="ratingref">Rated 5 Stars in BestTech</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="lowerSection">
+        <section class="card">
+          <div class="customer">
+            <img
+              src="/socialproof_frontendmentor-main/images/image-colton.jpg"
+              alt="Picture of customer"
+            />
+            <div class="personalia">
+              <p class="name">Colton Smith</p>
+              <p class="verified">Verified Buyer</p>
             </div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent!"
+            </p>
+          </div>
+        </section>
+        <div class="card">
+          <div class="customer">
+            <img
+              class="headshot"
+              src="/socialproof_frontendmentor-main/images/image-irene.jpg"
+            />
+            <div class="personalia">
+              <p class="name">Irene Roberts</p>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </p>
+          </div>
         </div>
-        <script src="" async defer></script>
-    </body>
+        <div class="card">
+          <div class="customer">
+            <img
+              class="headshot"
+              src="/socialproof_frontendmentor-main/images/image-anne.jpg"
+            />
+            <div class="personalia">
+              <p class="name">Anne Wallace</p>
+
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/hmbjorkevoll" target="_blank"
+          >Hans Martin Bjørkevoll</a
+        >.
+      </div>
+    </main>
+    <script src="" async defer></script>
+  </body>
 </html>
