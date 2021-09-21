@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
 ## Table of contents
 
@@ -22,33 +22,30 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+- The page is only optimized for the widths of 375px for mobile screens, and 1440px for desktops!!
 
 ### Screenshot
-
-![](./images/screenshot_desktop.png)
-![](./images/screenshot_mobile.png)
 
 ### Links
 
 - Solution URL: (https://hmbjorkevoll.github.io/socialproof_frontendmentor/)
 
 ## My process
-I started building the site with desktop in mind first. Found that to be frustrating when designing for mobile, and discarded all my css and started again with mobile-first. This went a lot better, but there are still a few minor issues with the design that I just can't nail down at this point in time.
+
+Having failed the first time I tried this, I came back now after more than 6 months and I'm quite pleased with the result. I have specifically NOT made the design responsive, as I wanted to make the page more static this time, and take on more challenging projects as I go forward.
 
 ### Built with
 
-- CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-I learned to use CSS grid, and specifically grid areas in a way that I was not used to before. Had to think hard about how to get the responsive design right, and it's about 98% there now. The last 2% is going to take too long for now, have to keep moving to a new project to learn at a more suitable pace.
+Being mindful of flex containers and how to position items inside of them, using the :child-selector with different margins to accomplish the offset design of the cards in the desktop version.
 
 ### Continued development
 
-I need top be able to place elements individually with more precision. Not yet at the point where I can place the ratings offset from each other. That's something I need to learn.
-Additionally, the time this took was way too long if I was working on a real project, and experiences like this should make me faster when I move forward.
+Continue buidling responsive website, integrating my JS skills, continue to make things faster.
 
 ### Useful resources
 
