@@ -20,9 +20,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### The challenge
 
-Users should be able to:
-
-- The page is only optimized for the widths of 375px for mobile screens, and 1440px for desktops!!
+- !!! The page is only optimized for the widths of 375px for mobile screens, and 1440px for desktops !!!
 
 ### Screenshot
 
