@@ -26,7 +26,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: (https://hmbjorkevoll.github.io/socialproof_frontendmentor/)
+- Solution URL: (https://frontend-mentor-silk.vercel.app/)
 
 ## My process
 
