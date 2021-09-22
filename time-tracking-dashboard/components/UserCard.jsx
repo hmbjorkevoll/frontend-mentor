@@ -7,33 +7,21 @@ export default function UserCard() {
   const [isWeekly, setIsWeekly] = useState(false);
   const [isMonthly, setIsMonthly] = useState(false);
 
-  const toggleDaily = () => {};
-  const toggleWeekly = () => {};
-  const toggleMonthly = () => {};
-
-  // const toggleActive = (e) => {
-  //   setActive(e.target.textContent);
-  //   function activeText() {
-  //     if (Active == "Daily") {
-  //       document.getElementsById("daily").style.color = "hsl(236, 100%, 87%)";
-  //       document.getElementsById("weekly").style.color = "hsl(235, 45%, 61%)";
-  //       document.getElementsById("monthly").style.color = "hsl(235, 45%, 61%)";
-  //     }
-  //     if (Active == "Weekly") {
-  //       document.body.daily.style.color = "hsl(235, 45%, 61%)";
-  //       document.weekly.style.color = "hsl(236, 100%, 87%)";
-  //       document.monthly.style.color = "hsl(235, 45%, 61%)";
-  //     }
-  //     if (Active == "Monthly") {
-  //       document.daily.style.color = "hsl(235, 45%, 61%)";
-  //       document.weekly.style.color = "hsl(235, 45%, 61%)";
-  //       document.monthly.style.color = "hsl(236, 100%, 87%)";
-  //     }
-  //   }
-  //   console.log(e.target.textContent);
-  //   console.log(Active);
-  //   activeText();
-  // };
+  const toggleDaily = () => {
+    setIsDaily(true);
+    setIsWeekly(false);
+    setIsMonthly(false);
+  };
+  const toggleWeekly = () => {
+    setIsDaily(false);
+    setIsWeekly(true);
+    setIsMonthly(false);
+  };
+  const toggleMonthly = () => {
+    setIsDaily(false);
+    setIsWeekly(false);
+    setIsMonthly(true);
+  };
 
   return (
     <div className={styles.card}>
@@ -50,15 +38,33 @@ export default function UserCard() {
         </div>
       </div>
       <div className={styles.select}>
-        <p onClick={toggleDaily} className={styles.daily} id="daily">
-          Daily
-        </p>
-        <p onClick={toggleWeekly} className={styles.weekly} id="weekly">
-          Weekly
-        </p>
-        <p onClick={toggleMonthly} className={styles.monthly} id="monthly">
-          Monthly
-        </p>
+        {isDaily ? (
+          <p onClick={toggleDaily} className={styles.active}>
+            Daily
+          </p>
+        ) : (
+          <p onClick={toggleDaily} className={styles.daily}>
+            Daily
+          </p>
+        )}
+        {isWeekly ? (
+          <p onClick={toggleWeekly} className={styles.active}>
+            Weekly
+          </p>
+        ) : (
+          <p onClick={toggleWeekly} className={styles.weekly}>
+            Weekly
+          </p>
+        )}
+        {isMonthly ? (
+          <p onClick={toggleMonthly} className={styles.active}>
+            Monthly
+          </p>
+        ) : (
+          <p onClick={toggleMonthly} className={styles.monthly}>
+            Monthly
+          </p>
+        )}
       </div>
     </div>
   );
