@@ -1,0 +1,60 @@
+.cardOutline {
+  list-style: none;
+  border: 2px solid hsl(235, 46%, 20%);
+  border-radius: 20px;
+  margin-top: 20px;
+  z-index: -1;
+  background: hsl(235, 46%, 20%);
+}
+
+.cardStatic {
+  margin-top: 40px;
+  border-radius: 20px;
+  display: grid;
+  padding-top: 10px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.textAndMenu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.activityTitle {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menuDots {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.cardData {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hrs {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.lastWeek {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 4rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.userCard {
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  .layout {
+    display: grid;
+    margin-top: 4rem;
+  }
+}
