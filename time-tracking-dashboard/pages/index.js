@@ -5,9 +5,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 
 export default function Home() {
-  const [isDaily, setIsDaily] = useState(true);
-  const [isWeekly, setIsWeekly] = useState(false);
-  const [isMonthly, setIsMonthly] = useState(false);
+  const [timePeriod, setTimePeriod] = useState("daily");
   return (
     <>
       <Head>
@@ -18,22 +16,10 @@ export default function Home() {
       <div className={styles.layout}>
         <UserCard
           className={styles.userCard}
-          isDaily={isDaily}
-          onDailyChange={setIsDaily}
-          isWeekly={isWeekly}
-          onWeeklyChange={setIsWeekly}
-          isMonthly={isMonthly}
-          onMonthlyChange={setIsMonthly}
+          timePeriod={timePeriod}
+          setTimePeriod={setTimePeriod}
         />
-        <TimeCard
-          className={styles.timeCard}
-          isDaily={isDaily}
-          onDailyChange={setIsDaily}
-          isWeekly={isWeekly}
-          onWeeklyChange={setIsWeekly}
-          isMonthly={isMonthly}
-          onMonthlyChange={setIsMonthly}
-        />
+        <TimeCard className={styles.timeCard} timePeriod={timePeriod} />
       </div>
     </>
   );

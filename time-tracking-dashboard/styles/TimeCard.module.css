@@ -1,19 +1,24 @@
+.activity {
+  margin-bottom: 50px;
+}
+
 .cardOutline {
   list-style: none;
-  border: 2px solid hsl(235, 46%, 20%);
+  border: 1px solid hsl(235, 46%, 20%);
   border-radius: 20px;
   margin-top: 20px;
-  z-index: -1;
-  background: hsl(235, 46%, 20%);
+  background-image: url("../public/icon-work.svg");
+  background-position: top right 10%;
 }
 
 .cardStatic {
   margin-top: 40px;
+  margin-bottom: -2px;
   border-radius: 20px;
   display: grid;
   padding-top: 10px;
-  border: 2px solid black;
-  z-index: 1;
+  background: hsl(235, 46%, 20%);
+  color: var(--text-color);
 }
 
 .textAndMenu {
@@ -54,7 +59,7 @@
   margin: 0;
 }
 
-.lastWeek {
+.lastPeriod {
   padding: 0;
   margin: 0;
 }

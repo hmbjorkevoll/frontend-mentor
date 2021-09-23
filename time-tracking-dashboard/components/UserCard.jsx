@@ -1,33 +1,18 @@
 import Image from "next/image";
 import styles from "../styles/UserCard.module.css";
 import { useState, useEffect } from "react";
+import imageJeremy from "../public/image-jeremy.png";
 
-export default function UserCard() {
-  const [isDaily, setIsDaily] = useState(true);
-  const [isWeekly, setIsWeekly] = useState(false);
-  const [isMonthly, setIsMonthly] = useState(false);
-
-  const toggleDaily = () => {
-    setIsDaily(true);
-    setIsWeekly(false);
-    setIsMonthly(false);
-  };
-  const toggleWeekly = () => {
-    setIsDaily(false);
-    setIsWeekly(true);
-    setIsMonthly(false);
-  };
-  const toggleMonthly = () => {
-    setIsDaily(false);
-    setIsWeekly(false);
-    setIsMonthly(true);
+export default function UserCard({ timePeriod, setTimePeriod }) {
+  const onTimeChange = (period) => {
+    setTimePeriod(period);
   };
 
   return (
     <div className={styles.card}>
       <div className={styles.user}>
         <img
-          src="https://images.unsplash.com/photo-1520451644838-906a72aa7c86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
+          src={imageJeremy.src}
           width="75px"
           alt="picture of the user"
           className={styles.profilePicture}
@@ -38,30 +23,30 @@ export default function UserCard() {
         </div>
       </div>
       <div className={styles.select}>
-        {isDaily ? (
-          <p onClick={toggleDaily} className={styles.active}>
+        {timePeriod == "daily" ? (
+          <p onClick={() => onTimeChange("daily")} className={styles.active}>
             Daily
           </p>
         ) : (
-          <p onClick={toggleDaily} className={styles.daily}>
+          <p onClick={() => onTimeChange("daily")} className={styles.daily}>
             Daily
           </p>
         )}
-        {isWeekly ? (
-          <p onClick={toggleWeekly} className={styles.active}>
+        {timePeriod == "weekly" ? (
+          <p onClick={() => onTimeChange("weekly")} className={styles.active}>
             Weekly
           </p>
         ) : (
-          <p onClick={toggleWeekly} className={styles.weekly}>
+          <p onClick={() => onTimeChange("weekly")} className={styles.weekly}>
             Weekly
           </p>
         )}
-        {isMonthly ? (
-          <p onClick={toggleMonthly} className={styles.active}>
+        {timePeriod == "monthly" ? (
+          <p onClick={() => onTimeChange("monthly")} className={styles.active}>
             Monthly
           </p>
         ) : (
-          <p onClick={toggleMonthly} className={styles.monthly}>
+          <p onClick={() => onTimeChange("monthly")} className={styles.monthly}>
             Monthly
           </p>
         )}
