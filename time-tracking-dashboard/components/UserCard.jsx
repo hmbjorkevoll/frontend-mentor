@@ -13,7 +13,7 @@ export default function UserCard({ timePeriod, setTimePeriod }) {
       <div className={styles.user}>
         <img
           src={imageJeremy.src}
-          width="75px"
+          width="70px"
           alt="picture of the user"
           className={styles.profilePicture}
         />

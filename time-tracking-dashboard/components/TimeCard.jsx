@@ -19,6 +19,12 @@ export default function TimeCard(timePeriod) {
       .then((timeData) => setTimeData(timeData));
   }, []);
 
+  //
+  // The use of arrays below are because the data in the data.json file do not contain this info.
+  // I wanted to challenge myself by using data from different sources, but ideally
+  // the data would have been merged into the data.json-file for easier and more consistent use.
+  //
+
   // Using the imported images in an array to be able to map through in the render of the cards
   const images = [work, play, study, exercise, social, selfcare, ellipsis];
 
