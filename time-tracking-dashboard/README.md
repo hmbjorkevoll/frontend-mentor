@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./screenshot.PNG)
+![Screenshot of time tracking dashboard project](/screenshot.PNG)
 
 ### Links
 
